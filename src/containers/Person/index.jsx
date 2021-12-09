@@ -39,7 +39,7 @@ const mapStateToProps = (state) => {
     console.log("父组件里面的状态=============>"+state.person)
     return {persons:state.person}
 }
-//映射改变状态的方法
+//映射改变状态的方法,对没错就是这样
 const mapDispatchToProps = (dispatch) => {
     console.log("父组件里面改变状态的方法======>")
     return {add:(person) => {dispatch(addPerson1(person))}}
